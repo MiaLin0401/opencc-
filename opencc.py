@@ -2,7 +2,6 @@
 from opencc import OpenCC
 import io
 
-results = []
 openCC = OpenCC('s2t')  # 簡體中文轉繁體中文
 with io.open("wiki.zh.txt", 'r', encoding="utf-8") as inputfile:
     data = inputfile.read()
